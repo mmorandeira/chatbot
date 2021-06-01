@@ -1,0 +1,239 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - buenas
+    - hello
+    - hi
+    - hola
+    - holis
+    - buen dia
+    - qué tal?
+    - buenos días
+    - buenos dias
+    - buenas tardes
+    - buenas noches
+
+- intent: goodbye
+  examples: |
+    - adiós
+    - hasta luego
+    - nos vemos luego
+    - hasta pronto
+    - nos vemos más tarde
+    - chau
+    - hasta la próxima
+    - bye
+    - gracias por la explicacion
+
+- intent: affirm
+  examples: |
+    - sí
+    - si
+    - por supuesto
+    - suena bien
+    - correcto
+    - está bien
+    - entendido
+    - enterado
+
+- intent: deny
+  examples: |
+    - no
+    - jamás
+    - no lo creo
+    - no creo
+    - no me gusta eso
+    - no me convence
+    - no creo que sea correcto
+    - nada
+
+- intent: que_es_scrum
+  examples: |
+    - ¿Que es scrum?
+    - ¿En que consiste scrum?
+    - ¿Como es el proceso de scrum?
+    - Contame sobre scrum
+    - ¿Me podes explicar sobre scrum?
+
+- intent: es_una_metodologia
+  examples: |
+    - ¿Scrum es una metodologia?
+    - ¿No es una metodologia?
+    - ¿Cual es la diferencia entre metodologia y framework?
+    - ¿Es lo mismo framework que metodologia?
+    - pense que scrum era una metodologia
+    - pense que era una metodologia
+    - ¿Entonces que es una metodologia?
+    - ¿Que es una metodologia?
+    - ¿Porque scrum no es una metodologia?
+
+- intent: eventos
+  examples: |
+    - ¿Que eventos existen?
+    - ¿Que eventos define scrum?
+    - ¿Cuales son los eventos?
+    - ¿Para que sirven los eventos?
+    - Contame mas sobre los eventos
+    - Decime que eventos hay
+
+- intent: sprint_planning
+  examples: |
+    - ¿Que es el sprint planning?
+    - ¿Para que es el sprint planning?
+    - ¿Para que sirve tener una reunion previa al sprint?
+    - ¿Cual es el objetivo del sprint planning?
+    - Contame mas del sprint planning
+    - ¿Me podes repetir lo del sprint planning?
+    - Quiero mas informacion del sprint planning
+
+- intent: daily_meeting
+  examples: |
+    - ¿Que es la daily meeting?
+    - ¿Para que es la daily meeting?
+    - ¿Para que sirve tener un reunion todos los dias?
+    - ¿Cual es el objetivo de la daily meeting?
+    - Contame mas del sprint planning
+    - ¿Me podes repetir lo del sprint planing?
+
+- intent: sprint_review
+  examples: |
+    - ¿Que es el sprint review?
+    - ¿Para que sirve el sprint review?
+    - ¿Para que sirve tener una reunion despues del sprint?
+    - ¿Cual es el objetivo del sprint review?
+    - Contame mas del sprint review
+    - ¿Me podes repetir lo del sprint review?
+
+- intent: sprint_retrospective
+  examples: |
+    - ¿Que es el sprint retrospective?
+    - ¿Para que es el sprint retrospective?
+    - ¿Para que sirve hacer una revisión al final del sprint?
+    - ¿Cual es el objetivo del sprint retrospective?
+    - Contame mas del sprint retrospective
+    - ¿Me podes repetir lo del sprint retrospective?
+
+- intent: roles
+  examples: |
+    - ¿Que roles existen?
+    - ¿Que roles define scrum?
+    - ¿Cuales son los roles?
+    - ¿Para que sirven los artefactos?
+    - Contame mas sobre los roles
+    - Decime que roles hay
+
+- intent: scrum_master
+  examples: |
+    - ¿Que hace el scrum master?
+    - Contame mas sobre el scrum master
+    - ¿De que se encarga el scrum master?
+    - ¿Que tengo que hacer si soy scum master?
+    - ¿Que tiene que hacer el scrum master?
+    - No entendi el rol de scrum master, ¿Lo podes explicar?
+
+- intent: product_owner
+  examples: |
+    - ¿Que hace el product owner?
+    - Contame mas sobre el product owner
+    - ¿De que se encarga el product owner?
+    - ¿Que tengo que hacer si soy product owner?
+    - ¿Que tiene uqe hacer el product owner?
+    - No entendi el rol de product owner, ¿Lo podes explicar?
+
+- intent: equipo_de_desarollo
+  examples: |
+    - example
+
+- intent: artefactos
+  examples: |
+    - ¿Que artefactos existen?
+    - ¿Cuales son los artefactos?
+    - ¿Que artefactos define scrum?
+    - ¿Para que sirven los artefactos?
+    - Contame mas sobre los artefactos
+    - Decime que artefactos hay
+
+- intent: product_backlog
+  examples: |
+    - ¿Que es el product backlog?
+    - ¿Para que sirve el product backlog?
+    - ¿Me podes repetir que es el product backlog?
+    - No entendi que es el product backlog
+    - ¿Cual es la utilidad del product backlog?
+    - Contame mas sobre el product backlog
+    - ¿Me podes repetir que es el product backlog?
+    - ¿Me das mas informacion del product backlog?
+
+- intent: sprint_backlog
+  examples: |
+    - ¿Que es el sprint backlog?
+    - ¿Para que sirve el product backlog?
+    - ¿Me podes repetir que es el sprint backlog?
+    - No entendi que es el sprint backlog
+    - ¿Cual es la utilidad del sprint backlog?
+    - Contame mas sobre el sprint backlog
+    - ¿Me podes repetir que es el product backlog?
+    - ¿Me das mas informacion del product backlog?
+
+- intent: incremento
+  examples: |
+    - ¿Que es el incremento?
+    - ¿Para que sirve el incremento?
+    - ¿Cual es la utilidad del incremento?
+    - No entendi que es el incremento
+    - Contame mas sobre el incremento
+    - ¿Me podes repetir lo del incremento?
+    - ¿Me das mas detalles del incremento?
+
+- intent: proceso_scrum
+  examples: |
+    - ¿Como funciona el proceso?
+    - ¿Como es el proceso de scrum?
+    - ¿Como aplico scrum?
+    - ¿Como es le flujo de trabajo?
+    - ¿Como funciona scrum?
+    - ¿Como es el flujo de scrum?
+    - Contame sobre el proceso
+    - ¿Me podes explicar como es el proceso?
+    - Explicame sobre el proceso de scrum 
+
+- intent: scrum_team
+  examples: |
+    - ¿Que es el scrum team?
+    - ¿A que te referis con el scrum team?
+    - ¿Me podes explicar mas sobre el scrum team?
+    - Contame mas del scrum team
+    - No entendi lo del scrum team
+    - ¿Que seria el scrum team?
+
+- intent: epica
+  examples: |
+    - ¿Que es una epica?
+    - ¿Para que sirve las epicas?
+    - Contame mas sobre las epicas
+    - ¿Para que son las epicas?
+    - No entendi las epicas, ¿Podes volver a explicar?
+
+- intent: user_story
+  examples: |
+    - ¿Que son las user stories?
+    - ¿Que son las historias de usuario?
+    - ¿Para que sirven las user stories?
+    - ¿Para que sirven las historias de usuario?
+    - Contame mas de las user stories
+    - Contame mas de las historias de usuario
+    - ¿Las user stories son epicas?
+    - ¿Las user stories son tareas tecnicas?
+
+- intent: teoria_scrum
+  examples: |
+    - ¿En que se basa scrum?
+    - Teoria de scrum
+    - ¿En que esta basado?
+    - ¿Cuales son los fundamentos de scrum?
+    - Decime cuales son los fundamentos de scrum
+
+
+

@@ -1,0 +1,171 @@
+version: "2.0"
+
+slots:
+  explanation_level:
+    type: categorical
+    values:
+      - low
+      - medium
+      - high
+
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - que_es_scrum
+  - es_una_metodologia
+  - eventos
+  - sprint_planning
+  - daily_meeting
+  - sprint_review
+  - sprint_retrospective
+  - roles
+  - scrum_master
+  - product_owner
+  - equipo_de_desarollo
+  - artefactos
+  - product_backlog
+  - sprint_backlog
+  - incremento
+  - proceso_scrum
+  - scrum_team
+  - epica
+  - user_story
+  - teoria_scrum
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+responses:
+
+  utter_greet:
+  - text: ¡Hola! Estoy aquí para guiarte en el proceso Scrum. ¿En qué puedo ayudarte?
+  - text: ¡Hola! Estoy aquí para responder las consultas que tengas sobre el proceso Scrum.
+
+  utter_goodbye:
+  - text: ¡Adiós!, ante cualquier duda que tengas sobre Scrum ya sabes donde encontrarme.
+  - text: Hasta luego!, no dudes en volver a consultarme si tenes otra duda sobre Scrum.
+  - text: Hasta pronto, ante cualquier duda que tengas sobre Scrum ya sabes donde encontrarme.
+
+  utter_que_es_scrum:
+  - text: "Scrum es un framework que define un conjunto de eventos, prácticas, roles y artefactos, y que puede tomarse como conjunto base para definir el proceso de producción que usará un equipo de trabajo o dentro de un proyecto.\n
+  Caracterizado por:\n
+  - Adoptar una estrategia de desarrollo incremental, en lugar de la planificación y ejecución completa del producto.\n
+  - Basar la calidad del resultado más en el conocimiento tácito de las personas en equipos auto organizados.\n
+  - Solapar las diferentes fases del desarrollo, en lugar de realizar una tras otra en un ciclo secuencial o en cascada."
+
+  utter_metodologia:
+  - text: Una metodología impone una serie de procesos, ceremonias, documentos, estándares, etc. Mientras que un framework da una serie de pautas, roles, artefactos, ceremonias, etc a modo de guía. Por lo tanto, Scrum no es una metodología porque simplemente brinda una guia de los pasos a seguir.
+
+  utter_roles:
+  - text: "Un equipo Scrum suele estar compuesto por 3 a 9 miembros del equipo de desarrollo, más el Scrum Master y el Product Owner.\n
+  - Scrum Master: gestionar el proceso Scrum y ayudar a eliminar impedimentos que afecten a la entrega del producto.\n
+  - Product Owner: representa a los stakeholders. Es la persona encargada de gestionar el Product Backlog. \n
+  - Equipo de desarrollo: se encarga de desarrollar el producto para conseguir entregar el incremento. \n
+  Además existen roles auxiliares en los equipos Scrum pero que deben ser tomados en cuenta.\n
+  - Stakeholders (Clientes, Proveedores, Vendedores, etc): Son las personas interesadas en el proyecto. Solo participan durante las revisiones del sprint."
+  
+  utter_scrum_master:
+  - text: "El Scrum Master tiene dos funciones principales dentro del marco de trabajo:\n
+  1. Gestionar el proceso Scrum: el Scrum Master se encarga de gestionar y asegurar que el proceso Scrum se lleva a cabo correctamente.\n
+  2. Eliminar impedimentos: ayuda a eliminar progresiva y constantemente impedimentos que van surgiendo en la organización.\n
+  Además, se encarga de las labores de mentoring y formación, coaching y de facilitar reuniones y eventos si es necesario."
+
+  utter_product_owner:
+  - text: "El Product Owner es la persona dentro del marco de trabajo que descubre las necesidades de los clientes y busca soluciones a las mismas.
+  El Product Owner posee un perfil con capacidad de visión de negocio, así como habilidades sociales para la entrevista; como puede ser el uso de preguntas abiertas, la empatía y la reformulación. Es un rol que está muy pegado al negocio a través de los clientes o a personas que tienen relación con ellos."
+ 
+  utter_equipo_de_desarrollo:
+  - text: "El equipo Scrum es un equipo multidisciplinar. Consiste en un grupo de personas con las habilidades necesarias para transformar todos los items del product backlog en incrementos de desarrollo. El equipo de desarrollo Scrum consiste en profesionales responsables de desarrollar incrementos de producto en cada Sprint."
+  
+  utter_artefactos:
+  - text: "Los principales artefactos en Scrum son:\n
+  - Product Backlog: Registra y prioriza los requisitos desde el punto del vista del cliente.\n
+  - Sprint Backlog: Registro de los requisitos desarrolladores. Son las tareas que deben realizarse durante el sprint para lograr el incremento previsto.\n
+  - Increment: Resultado de cada sprint.\n
+  Otros artefactos:\n
+  - Definition of Done (DoD): es un documento que define qué se considera hecho en un equipo Scrum. \n
+  - Definition of Ready (DoR): es un documento que define cuándo un requerimiento se puede considerar en el Sprint Planning con idea de incluirlo en el Sprint.\n
+  - Burndown Chart: es un gráfico de trabajo pendiente que muestra la velocidad a la que se están completando los objetivos."
+  
+  utter_eventos:
+  - text: "El desarrollo del producto es realizado en iteraciones (Sprint) en cada una se declara un objetivo que incremente el valor del producto. El sprint se divide en los siguientes eventos: \n
+  1) Sprint Planning: Esta reunión tiene como propósito definir el objetivo del Sprint y negociar qué ítems del backlog a desarrollar. En esta reunión participa todo el Scrum Team.\n
+  2) Daily Scrum: Es la reunión diaria donde participa todo el equipo de desarollo. Está orientada a realizar una inspección y adaptación con un ciclo rápido.\n
+  3) Sprint Review: En esta reunión se revisa todo el trabajo realizado por el Equipo de Desarrollo, y sirve para inspeccionar el incremento. Todo lo observado puede afectar el backlog (nuevos, modificaciones o eliminaciones de items).\n
+  4) La Retrospectiva de Sprint es una reunión que busca mejorar la forma en que el Scrum Team desempeña su trabajo. En ella se expone todo lo que fue observado en el Sprint."
+
+  utter_proceso_scrum:
+  - text: "En Scrum un proyecto se ejecuta en Sprints (ciclos temporales cortos fijos). Cada Sprint tiene que proporcionar un resultado completo, un incremento de producto final que sea susceptible de ser entregado al cliente cuando lo solicite. Las actividades que se llevan a cabo en Scrum son las siguientes:\n
+  1) Planificación de la iteración: El primer día de la iteración se realiza la reunión de planificación de la iteración en donde se seleccionan los requisitos.\n
+  2) Ejecución de la iteración: Cada día el equipo realiza una reunión de sincronización (15 minutos). El equipo inspecciona el trabajo que el resto está realizando para poder hacer las adaptaciones necesarias que permitan cumplir con la previsión de objetivo.\n
+  3) Inspección y adaptación: El último día de la iteración se realiza la reunión de revisión de la iteración en donde el equipo presenta al cliente los requisitos completados en la iteración para posteriormente realizar una retrospectiva en donde el equipo analiza cómo ha sido su manera de trabajar para mejorar su productividad."
+ 
+  utter_sprint_planning:
+  - text: "El Sprint Planning es una reunión que se realiza al comienzo de cada Sprint donde participa el equipo Scrum al completo; sirve para inspeccionar el Product Backlog y seleccionen los Product Backlog Items en los que se van a trabajar durante el Sprint. \n
+  Durante esta reunión, el Product Owner presenta el Product Backlog que el equipo de desarrollo se encarga de estimar y clarificar aquellos ítems que crea necesarios.\n
+  El Sprint Planning se divide en dos partes. En la primera se trata qué se va a hacer en el siguiente Sprint y, en la segunda, se discute el cómo. Puede durar hasta 8 horas para Sprints de 4 semanas." 
+ 
+  utter_daily_meeting:
+  - text: "El Daily Scrum o Daily Meeting es una reunión diaria de 15 minutos en la que participa exclusivamente el Development Team. En esta reunión todas y cada una de las personas del Development Team responden a las siguientes preguntas:\n
+  1. ¿Qué hice ayer para contribuir al Sprint Goal?\n
+  2. ¿Qué voy a hacer hoy para contribuir al Sprint Goal?\n
+  3. ¿Tengo algún impedimento que me impida entregar?\n
+  Esta reunión permite la inspección y adaptación a través de la auto-organización del equipo."
+ 
+  utter_sprint_review:
+  - text: "El Sprint Review es la reunión que ocurre al final del Sprint donde el Product Owner y el Develpment Team presentan a los stakeholders el incremento terminado para su inspección y adaptación correspondientes. En esta reunión organizada por el product owner se estudia cuál es la situación y se actualiza el Product Backlog con las nuevas condiciones que puedan afectar al negocio."
+
+  utter_sprint_retrospective:
+  - text: "La retrospectiva ocurre al final del Sprint, después del Sprint Review.\n
+  El objetivo es hacer de reflexión sobre el último Sprint e identificar posibles mejoras para el próximo. Es normal que vayan rotando el rol de facilitador durante la retrospectiva.\n
+  Este formato se puede facilitar pidiendo a los miembros del equipo Scrum que escriban notas –en post-its- para luego agruparlas y votar aquellos ítems más relevantes.\n
+  Habitualmente se destina entre 1 y 2 horas para un sprint de 4 semanas."
+  
+  utter_product_backlog:
+  - text: "El Product Backlog es un inventario que contiene todos los requerimientos que necesitamos implementar en el producto. El Product Backlog debe ser gestionado en exclusiva por el Product Owner. \n ¿Querés saber como es el proceso para diseñar el Product Backlog?"
+ 
+  utter_diseño_backlog:
+  - text: "Para el diseño del backlog se siguen lo siguientes pasos: \n 
+  1) En primer lugar, se definen los temas. Estos deben ser generales y cada uno de ellos puede ser parte de distintas iniciativas.\n
+  2) Se definen las iniciativas u objetivos comunes relacionado con un tema. Puede ser que una misma iniciativa comparta dos temas. Al final, los temas funcionan como etiquetas en cada iniciativa. \n
+  3) Se definen todas las épicas que se requieren para perseguir ese objetivo en común que hemos marcado en el tema. Este proceso lo hacemos en conjunto con los requerimientos de los clientes.\n
+  4) Se divide cada épica en historias de usuarios. Es fundamental la colaboración del cliente, para adaptarse a lo que el quiere tal como él lo solicite.\n
+  5) Se dividen a su vez las historias de usuario definidas en el paso anterior en tareas o actividades para ejecutarlas. Se seleccionan así las tareas del backlog para ese Sprint o iteración."
+
+  utter_sprint_backlog:
+  - text: "Este artefacto es un elemento para visualizar el trabajo a realizar durante cada Sprint y está gestionado por el equipo de desarrollo. Su propósito es mantener la transparencia dentro del desarrollo, actualizándose durante toda la iteración especialmente a través de los daily Scrums. \n¿Querés saber como es el proceso para diseñar el Backlog?"
+ 
+  utter_incremento:
+  - text: "Un Incremento es el resultado del Sprint que será puesto a disposición del usuario final en forma de software, aportando un valor de negocio al producto que se está desarrollando."
+
+  utter_scrum_team:
+  - text: "Un Scrum Team es la unidad fundamental de Scrum, es un pequeño equipo de personas divididos en los roles un Scrum Master, un Product Owner y Developers. En el Scrum Team no hay subequipos ni jerarquías. Es una unidad cohesionada de profesionales enfocados en un objetivo a la vez, el Objetivo del Producto. Los Scrum Teams son multifuncionales y autogestionados."
+
+  utter_epica:
+  - text: "a"
+
+  utter_user_story:
+  - text: "Una historia de usuario es la unidad de trabajo más pequeña en un marco ágil. Es un objetivo final expresado desde la perspectiva del usuario final. Representa una necesidad de negocio que puede ser implementada en un sprint y aporta valor al producto. Estos elementos componen una Épica y, a su vez, una historia esta compuesta por tareas técnicas."
+
+  utter_teoria_scrum:
+  - text: "Scrum se basa en el empirismo y el pensamiento Lean. El empirismo afirma que el conocimiento proviene de la experiencia y de la toma de decisiones con base en lo observado. El pensamiento Lean reduce el desperdicio y se enfoca en lo esencial. Scrum emplea un enfoque iterativo e Incremental para optimizar la previsibilidad y controlar el riesgo."
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

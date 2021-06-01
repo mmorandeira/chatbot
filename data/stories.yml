@@ -1,0 +1,111 @@
+version: "2.0"
+
+stories:
+
+- story: greetings
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: que_es_scrum
+  steps:
+  - intent: que_es_scrum
+  - action: utter_que_es_scrum
+
+- story: es_una_metodologia
+  steps:
+  - intent: es_una_metodologia
+  - action: utter_metodologia
+
+- story: roles
+  steps:
+  - intent: roles
+  - action: utter_roles
+
+- story: artefactos
+  steps:
+  - intent: artefactos
+  - action: utter_artefactos
+
+- story: eventos
+  steps: 
+  - intent: eventos
+  - action: utter_eventos
+
+- story: sprint_planning
+  steps:
+  - intent: sprint_planning
+  - action: utter_sprint_planning
+
+- story: daily meeting
+  steps:
+  - intent: daily_meeting
+  - action: utter_daily_meeting
+
+- story: sprint review
+  steps:
+  - intent: sprint_review
+  - action: utter_sprint_review
+
+- story: sprint retrospective
+  steps:
+  - intent: sprint_retrospective
+  - action: utter_sprint_retrospective
+
+- story: proceso scrum
+  steps:
+  - intent: proceso_scrum
+  - action: utter_proceso_scrum
+
+- story: que es el product backlog si
+  steps:
+  - intent: product_backlog
+  - action: utter_product_backlog  
+  - intent: affirm
+  - action: utter_diseño_backlog
+
+- story: que es el product backlog no
+  steps:
+  - intent: product_backlog
+  - action: utter_product_backlog  
+  - intent: deny
+
+- story: sprint backlog
+  steps:
+  - intent: sprint_backlog
+  - action: utter_sprint_backlog
+
+- story: incremento
+  steps:
+  - intent: incremento
+  - action: utter_incremento
+
+- story: scrum_team
+  steps:
+  - intent: scrum_team
+  - action: utter_scrum_team
+
+- story: user_story
+  steps:
+  - intent: user_story
+  - action: utter_user_story
+
+- story: teoria_scrum
+  steps:
+  - intent: teoria_scrum
+  - action: utter_teoria_scrum
+
+- story: scrum master
+  steps:
+  - intent: scrum_master
+  - action: utter_scrum_master
+
+- story: product_owner
+  steps:
+  - intent: product_owner
+  - action: utter_product_owner
